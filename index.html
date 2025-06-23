@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="="id">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio Andika</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>Andika Agung Triadha</h1>
     <p>Front-End Developer | ReactJS & Next.js</p>
+    <a href="assets/CV_Andika_Agung_Triadha.pdf" class="download-btn" download>📄 Download CV</a>
   </header>
 
   <nav>
     <a href="#about">Tentang Saya</a>
     <a href="#projects">Proyek</a>
-    <a href="#contact">Kontak</a>
   </nav>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>👨‍💻 Tentang Saya</h2>
-
       <div class="photo-wrapper">
         <div class="profile-photo"></div>
       </div>
       <p>
         Saya adalah Front-End Developer yang fokus pada pembuatan antarmuka web interaktif menggunakan ReactJS & Next.js.
-        Saat ini baru saja menyelesaikan magang di PaDi UMKM sebagai Front-End Dev dan sedang aktif mengembangkan proyek open-source.
+        Baru menyelesaikan magang di PaDi UMKM dan sedang aktif mengembangkan proyek open-source.
       </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>📁 Proyek</h2>
       <div class="project-card">
         <h3>Sewa Mobil CMS</h3>
@@ -39,18 +40,19 @@
         <a href="https://admin-car-rental-lac.vercel.app/" target="_blank">🔗 Lihat Proyek</a>
       </div>
     </section>
-
-    <section id="contact">
-      <h2>📞 Kontak</h2>
-      <ul>
-        <li><strong>Email:</strong> atriadha@gmail.com</li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andika-agung-triadha-57671116b/" target="_blank">linkedin.com/in/andika</a></li>
-      </ul>
-    </section>
   </main>
 
   <footer>
+    <h2>📞 Kontak</h2>
+    <ul>
+      <li><strong>Email:</strong> atriadha@gmail.com</li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andika-agung-triadha-57671116b/" target="_blank">linkedin.com/in/andika</a></li>
+    </ul>
     <p>© 2025 Andika Agung Triadha</p>
   </footer>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
